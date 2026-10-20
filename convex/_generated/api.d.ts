@@ -8,13 +8,19 @@
  * @module
  */
 
+import type * as get_user_identity from "../get_user_identity.js";
+import type * as url from "../url.js";
+
 import type {
   ApiFromModules,
   FilterApi,
   FunctionReference,
 } from "convex/server";
 
-declare const fullApi: ApiFromModules<{}>;
+declare const fullApi: ApiFromModules<{
+  get_user_identity: typeof get_user_identity;
+  url: typeof url;
+}>;
 
 /**
  * A utility for referencing Convex functions in your app's public API.

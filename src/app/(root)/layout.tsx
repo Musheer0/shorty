@@ -1,5 +1,4 @@
 import { ClerkProvider, Show, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
-import './globals.css'
 import ConvexClientProvider from '@/components/convex-clerk-provider'
 
 
